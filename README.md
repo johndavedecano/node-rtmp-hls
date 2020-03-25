@@ -10,7 +10,7 @@ docker-compose up
 docker-compose down
 ```
 
-## Making it work using regular nodejs
+## Making it work without using docker-compose
 
 You have to make sure that you have ffmpeg installed on your machine
 
