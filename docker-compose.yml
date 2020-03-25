@@ -1,0 +1,15 @@
+version: '2'
+services:
+  media-server:
+    build:
+      context: ./
+    volumes:
+      - ./src:/app/src
+      - ./media:/app/media
+    ports:
+      - 8000:8000
+      - 1935:1935
+    command: ['yarn', 'start:dev']
+    environment:
+      PUBLISH_START_NOTIFY_URL: ''
+      PUBLISH_STOP_NOTIFY_URL: ''
