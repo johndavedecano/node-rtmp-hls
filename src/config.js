@@ -9,10 +9,10 @@ module.exports = {
   http: {
     port: 8000,
     allow_origin: '*',
-    mediaroot: process.env.MEDIA_ROOT,
+    mediaroot: process.env.MEDIA_ROOT || '/app/media',
   },
   relay: {
-    ffmpeg: process.env.FFMPEG_PATH,
+    ffmpeg: process.env.FFMPEG_PATH || '/usr/bin/ffmpeg',
     tasks: [
       {
         app: 'stream',
