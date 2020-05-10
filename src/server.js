@@ -3,7 +3,6 @@ const isEmpty = require('lodash/isEmpty')
 const config = require('./config')
 const http = require('./http-client')
 const createPlaylist = require('./create-playlist')
-const deletePlaylist = require('./delete-playlist')
 
 var nms = new NodeMediaServer(config)
 
@@ -57,7 +56,6 @@ nms.on('donePublish', async (id, StreamPath, _args) => {
     if (!isEmpty(process.env.PUBLISH_STOP_NOTIFY_URL)) {
       await http
         .post(process.env.PUBLISH_STOP_NOTIFY_URL, tokens[streamName])
-        .then(() => deletePlaylist(streamName))
         .catch(err => {
           console.error(err.message)
           session.reject()
