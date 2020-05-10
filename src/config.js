@@ -54,9 +54,7 @@ module.exports = {
           '-profile:v',
           'baseline',
           '-bufsize',
-          '7500k',
-          '-tune',
-          'zerolatency',
+          '7500k'
         ],
         hlsFlags: '[hls_time=10:hls_list_size=0:hls_flags=delete_segments]',
       },
@@ -75,9 +73,7 @@ module.exports = {
           '-profile:v',
           'baseline',
           '-bufsize',
-          '4200k',
-          '-tune',
-          'zerolatency',
+          '4200k'
         ],
         hlsFlags: '[hls_time=10:hls_list_size=0:hls_flags=delete_segments]',
       },
@@ -96,9 +92,7 @@ module.exports = {
           '-profile:v',
           'baseline',
           '-bufsize',
-          '2100k',
-          '-tune',
-          'zerolatency',
+          '2100k'
         ],
         hlsFlags: '[hls_time=10:hls_list_size=0:hls_flags=delete_segments]',
       },
@@ -117,9 +111,7 @@ module.exports = {
           '-profile:v',
           'baseline',
           '-bufsize',
-          '1200k',
-          '-tune',
-          'zerolatency',
+          '1200k'
         ],
         hlsFlags: '[hls_time=10:hls_list_size=0:hls_flags=delete_segments]',
       },
